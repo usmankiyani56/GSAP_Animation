@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(19, 19, 19), rgba(255, 255, 0, 0), rgb(19, 19, 19));
+}
+
+#two {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    padding: 0vw 15vw 0vw 20vw;
+}
+
+.text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    z-index: 9;
+    color: rgb(212, 212, 212);
+}
+
+.text h1 {
+    overflow: hidden;
+    font-size: 5vw;
+}
+
+.text p {
+    font-size: .8vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+
+}
+
+.text a {
+    width: 100%;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+
+}
+
+.text a:hover {
+    gap: 1vw;
+}
+
+.text h3 {
+    font-size: 1vw;
+}
+
+.text h2 {
+    font-size: .8vw;
+    margin-top: 1vw;
+    color: rgb(133, 133, 133);
+
+}
+
+.lineone {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1vw; */
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.innerline {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+    height: 200vh;
+}
+
+#linetwo {
+    margin-top: -100vh;
+}
+
+.cards {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#lineone .cards:nth-child(1) {
+    background-image: url(https://plus.unsplash.com/premium_photo-1667538960183-82690c60a2a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHZpbnRhZ2V8ZW58MHx8MHx8fDA%3D);
+}
+
+#lineone .cards:nth-child(2) {
+    background-image: url(https://media.istockphoto.com/id/1442149180/photo/young-women-skiing-in-the-mountains-1935.webp?b=1&s=170667a&w=0&k=20&c=FaDI9hbPjwtQFgvnTY-yCMy818KuLQ4Q0ilpJ7PrzSE=);
+}
+
+#lineone .cards:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1574687175248-c3e40a0e3c48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmludGFnZXxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+#lineone .cards:nth-child(4) {
+    background-image: url(https://media.istockphoto.com/id/1447094100/photo/old-cars-on-road-1970s.webp?b=1&s=170667a&w=0&k=20&c=VtUNKyh7pD_Ld_tE6_7OugOWbQ7spAyXCG4sSMRvwNM=);
+}
+
+#lineone .cards:nth-child(5) {
+    background-image: url(https://media.istockphoto.com/id/1401273929/photo/vintage-teenage-boy-playing-music-on-a-radio-cassette-recorder.jpg?s=612x612&w=0&k=20&c=Ivvg5eFJGRQfSSqy1qgMtv80c0MvIR6AtJIhobPK8-Y=);
+}
+
+#linetwo .cards:nth-child(1) {
+    background-image: url(https://media.istockphoto.com/id/1467338403/photo/birthday-back-in-the-eighties.jpg?s=612x612&w=0&k=20&c=ZsEXTf9A780Qy9M18EXAOLMwvRTTGFbcAwyIZgFw-mk=);
+}
+
+#linetwo .cards:nth-child(2) {
+    background-image: url(https://media.istockphoto.com/id/1410669510/photo/the-right-moment.jpg?s=612x612&w=0&k=20&c=V9AfKwffAV0O1luKxWxgOotUG6-Ifxg-uZZ9y51aNIg=);
+}
+
+#linetwo .cards:nth-child(3) {
+    background-image: url(https://media.istockphoto.com/id/1419182338/photo/vintage-image-from-the-50s-young-couple-posing-cutting-their-wedding-cake.jpg?s=612x612&w=0&k=20&c=gYaDqkeJn-bNHYhnRl0PEVY1Hx1omd4ZlFB073xQjEw=);
+}
+
+#linetwo .cards:nth-child(4) {
+    background-image: url(https://media.istockphoto.com/id/1402711217/photo/when-it-happened.jpg?s=612x612&w=0&k=20&c=7_wnHPq_C-0blk0ofeXkkt-ggfS1r1csSy9-bogk-t0=);
+}
+
+#linetwo .cards:nth-child(5) {
+    background-image: url(https://media.istockphoto.com/id/1413370838/photo/1980s-chinese-little-girl-and-mother-in-snow-photo-of-real-life.jpg?s=612x612&w=0&k=20&c=DmRTPTtX3CNoFNMCSI1UXTnp3LxP1fV7H1BVPgIfxKY=);
+}
+
+.c-noise {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/04/70/31/96/1000_F_470319677_SmiIewohppC2RmtDHWQhbBGrgY5jx86B.jpg);
+    height: 300%;
+    left: -50%;
+    opacity: .05;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.c-old {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: o;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/902/616/small/flickering-super-8-film-projector-perfect-for-transparent-overlay-free-video.jpg);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 150;
+    pointer-events: none;
+}
